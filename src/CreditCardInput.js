@@ -102,6 +102,7 @@ export default class CreditCardInput extends Component {
         <CreditCard focused={focused}
             {...cardViewSize}
             bgColor={bgColor}
+            style={{borderRadius: 2}}
             imageFront={imageFront}
             imageBack={imageBack}
             name={requiresName ? name : " " }
