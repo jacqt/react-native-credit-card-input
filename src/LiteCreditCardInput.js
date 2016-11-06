@@ -40,7 +40,9 @@ const s = StyleSheet.create({
   rightPart: {
     overflow: "hidden",
     flexDirection: "row",
+    alignItems: 'center',
     marginLeft: 10,
+    height: 50,
   },
   last4: {
     flex: 1,
