@@ -129,7 +129,7 @@ export default class LiteCreditCardInput extends Component {
               containerStyle={s.numberInput} />
         </View>
         <TouchableOpacity
-          style={{marginLeft: 20}}
+          style={{marginLeft: 15}}
           onPress={showRightPart ? this._focusNumber : this._focusExpiry }>
           <Image style={s.icon}
               source={{ uri: Icons[this._iconToShow()] }} />
