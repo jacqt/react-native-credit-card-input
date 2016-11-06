@@ -5,6 +5,7 @@ import {
   StyleSheet,
   TextInput,
   TouchableOpacity,
+  Platform,
 } from "react-native";
 
 const ss = StyleSheet.create({
@@ -17,7 +18,7 @@ const ss = StyleSheet.create({
     fontWeight: "bold",
   },
   input: {
-    height: 25,
+    height: Platform.OS === 'ios' ? 25 : 40,
     flex: 1,
     color: "black",
   },
