@@ -10,6 +10,8 @@ import {
 const ss = StyleSheet.create({
   container: {
     marginLeft: 20,
+    borderBottomColor: 'lightgrey',
+    borderBottomWidth: 1,
   },
   label: {
     fontWeight: "bold",
