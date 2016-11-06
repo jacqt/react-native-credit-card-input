@@ -160,7 +160,7 @@ export default class LiteCreditCardInput extends Component {
 
 LiteCreditCardInput.defaultProps = {
   placeholders: {
-    number: "1234 5678 1234 5678",
+    number: "Card number",
     expiry: "MM/YY",
     cvc: "CVC",
   },

@@ -17,7 +17,7 @@ const ss = StyleSheet.create({
     fontWeight: "bold",
   },
   input: {
-    height: 40,
+    height: 25,
     flex: 1,
     color: "black",
   },
