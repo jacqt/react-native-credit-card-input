@@ -18,9 +18,9 @@ const ss = StyleSheet.create({
     fontWeight: "bold",
   },
   input: {
-    color: "black",
+    height: Platform.OS === 'ios' ? 25 : 40,
     flex: 1,
-    paddingBottom: 5,
+    color: "black",
   },
 });
 
@@ -83,8 +83,7 @@ export default class CCInput extends Component {
           activeOpacity={0.99}>
         <View style={[ss.container, containerStyle]}>
           { !!label && <Text style={[ss.label, labelStyle]}>{label}</Text>}
-          <View style={{height: 40}}>
-            <TextInput ref="input"
+          <TextInput ref="input"
               keyboardType={keyboardType}
               autoCapitalise="words"
               autoCorrect={false}
@@ -92,8 +91,8 @@ export default class CCInput extends Component {
                 ss.input,
                 inputStyle,
                 ((validColor && status === "valid") ? { color: validColor } :
-                  (invalidColor && status === "invalid") ? { color: invalidColor } :
-                  {}),
+                 (invalidColor && status === "invalid") ? { color: invalidColor } :
+                 {}),
               ]}
               underlineColorAndroid={"transparent"}
               placeholderColor={placeholderColor}
@@ -101,7 +100,6 @@ export default class CCInput extends Component {
               value={value}
               onFocus={this._onFocus}
               onChangeText={this._onChange} />
-          </View>
         </View>
       </TouchableOpacity>
     );
